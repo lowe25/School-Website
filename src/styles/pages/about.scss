@@ -1,0 +1,75 @@
+.about-container {
+  font-family: 'Quicksand', sans-serif;
+  .img-landing {
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/images/about.jpg");
+    border-bottom: 2px solid red;
+    @include img-format;
+    color: #f4f4f4;
+    font-size: 18px;
+    text-align: center;
+    .about-intro {
+      position: relative;
+      top: 43%;
+      right: 20%;
+      p {
+        font-size: 50px;
+      }
+    }
+  }
+}
+.keme {
+  height: 40px;
+  background-color: red;
+}
+
+.about-about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  .text1,
+  p {
+    text-align: center;
+    width: 400px;
+  }
+  .text2,
+  p {
+    text-align: center;
+    width: 400px;
+  }
+}
+.school-info {
+  min-height: 600px;
+  text-align: center;
+  line-height: 1.6;
+
+  .about-section {
+    @include flex-setup;
+    padding-top: 20px;
+    .pic {
+      @include box;
+      background: url("/images/about-univ.jpg");
+      @include img-format;
+    }
+    .about-para {
+      width: 400px;
+      padding: 20px;
+    }
+  }
+  .about-statement {
+    height: 400px;
+    @include flex-setup;
+    .mission,
+    .school-logo {
+      @include box;
+    }
+    .school-logo {
+      margin-top: 25px;
+      background: url("/images/logo.jpg");
+      @include img-format;
+      background-size: contain;
+    }
+  }
+}

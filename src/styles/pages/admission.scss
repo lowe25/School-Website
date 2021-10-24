@@ -1,0 +1,32 @@
+.admission-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  .freshman,
+  .graduate {
+    height: 450px;
+    h1{
+        padding: 15px;
+    }
+    .text {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 1.6;
+    }
+    .requirements-list {
+      padding: 20px;
+      ul,
+      ol {
+        display: inline-block;
+        text-align: left;
+        li {
+          padding: 12px;
+        }
+      }
+    }
+  }
+}

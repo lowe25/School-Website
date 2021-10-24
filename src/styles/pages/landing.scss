@@ -1,0 +1,84 @@
+.landing {
+  font-family: 'Quicksand', sans-serif;
+  height: 100vh;
+  background-color: red;
+  background: url("/images/burton.jpg");
+  @include img-format;
+  .intro {
+    @include grid-setup;
+    position: relative;
+    top: 35%;
+    color: white;
+    .btn-container {
+      @include grid-setup;
+      padding: 15px;
+      .btn-cta {
+        height: 40px;
+        width: 190px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.news-con {
+  padding: 20px;
+  min-height: 500px;
+  text-align: center;
+  h1{
+    padding: 15px;
+  }
+  .news-section {
+    p{
+      color: white;
+      background-color: black;
+      line-height: 1.6;
+      padding: 10px;
+    }
+    @include flex-setup;
+    .news1,
+    .news2,
+    .news3 {
+      @include box;
+    }
+    .news1 {
+      background: url("/images/news1.jpg");
+      @include img-format;
+    }
+    .news2{
+      background: url("/images/news2.jpg");
+      @include img-format;
+    }
+    .news3{
+      background: url("/images/news3.jpg");
+      @include img-format;
+    }
+  }
+
+  .events-section {
+    p{
+      color: white;
+      background-color: black;
+      padding: 10px;
+    }
+    padding: 15px;
+    @include flex-setup;
+    .events1,
+    .events2,
+    .events3 {
+      @include box;
+    }
+    .events1 {
+      background: url("/images/event1.jpg");
+      @include img-format;
+    }
+    .events2{
+      background: url("/images/event2.jpg");
+      @include img-format;
+    }
+    .events3{
+      background: url("/images/event3.jpg");
+      @include img-format;
+    }
+  }
+}

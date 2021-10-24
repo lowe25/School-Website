@@ -1,0 +1,17 @@
+.navbar {
+  padding: 20px;
+  background-color: crimson;
+
+  ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    li {
+      list-style: none;
+    }
+    .nav-links {
+      color: #f4f4f4;
+      text-decoration: none;
+    }
+  }
+}

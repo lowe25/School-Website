@@ -1,0 +1,34 @@
+.academics-container {
+  font-family: 'Quicksand', sans-serif;
+  .academics-intro {
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/images/acads.jpg");
+    @include img-format;
+    border-bottom: 2px solid red;
+    .explore {
+      position: relative;
+      text-align: center;
+      top: 40%;
+      color: white;
+    }
+  }
+  .programs {
+    min-height: 500px;
+    @include flex-setup;
+    align-items: center;
+    .undergrad,
+    .graduate {
+      @include box;
+      border: 2px solid black;
+    }
+    .jeje {
+      height: 200px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      text-align: center;
+    }
+  }
+}
