@@ -1,0 +1,18 @@
+.undergrad-container {
+    @include container;
+    min-height: 350px;
+   .undergrad-courses{
+           .undergrad{
+            padding: 20px;
+            font-size: 15px;
+           }
+           ul {
+            display: inline-block;
+            text-align: left;
+            padding: 20px;
+            li {
+              padding: 12px;
+            }
+          }
+   }
+}

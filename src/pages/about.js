@@ -26,7 +26,7 @@ function About() {
             </div>
           </section>
 
-          <arcticle className="about-statement">
+          <article className="about-statement">
             <div className="mission">
               <h1>Mission</h1>
               <p>
@@ -46,7 +46,7 @@ function About() {
               </p>
             </div>
             <div className="school-logo"></div>
-          </arcticle>
+          </article>
         </article>
       </div>
     </div>

@@ -18,3 +18,11 @@
     background-size: cover;
     background-position: center;
 }
+
+@mixin container {
+    min-height: 850px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
