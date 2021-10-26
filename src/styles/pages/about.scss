@@ -1,5 +1,5 @@
 .about-container {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   .img-landing {
     height: 400px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -25,9 +25,7 @@
 }
 
 .about-about {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  @include flex-setup2;
   gap: 20px;
   .text1,
   p {
@@ -41,7 +39,7 @@
   }
 }
 .school-info {
-  min-height: 600px;
+  min-height: 800px;
   text-align: center;
   line-height: 1.6;
 
@@ -59,17 +57,45 @@
     }
   }
   .about-statement {
-    height: 400px;
     @include flex-setup;
-    .mission,
-    .school-logo {
-      @include box;
+    .mission-para {
+      width: 400px;
+      padding: 20px;
     }
     .school-logo {
-      margin-top: 25px;
+      @include box;
       background: url("/images/logo.jpg");
       @include img-format;
-      background-size: contain;
+    }
+  }
+}
+
+@include mobile-device(mobile-sm) {
+  .about-container {
+    .img-landing {
+      .about-intro {
+        left: 1%;
+      }
+    }
+  }
+  .school-info {
+    .about-section {
+      @include flex-setup2;
+      .pic {
+        @include box;
+        width: 270px;
+      }
+      .about-para {
+        text-align: center;
+        width: 260px;
+      }
+    }
+    .about-statement {
+      @include flex-setup2;
+      .mission-para {
+        text-align: center;
+        width: 260px;
+      }
     }
   }
 }

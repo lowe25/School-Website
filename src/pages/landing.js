@@ -11,7 +11,7 @@ function Landing() {
         </div>
       </div>
 
-      <div className="news-con">
+      <div className="school-con">
         <h1>News and Events</h1>
         <section className="news-section">
           <article className="news1">

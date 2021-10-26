@@ -1,5 +1,5 @@
 .landing {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   height: 100vh;
   background-color: red;
   background: url("/images/burton.jpg");
@@ -21,21 +21,16 @@
   }
 }
 
-.news-con {
-  padding: 20px;
-  min-height: 500px;
+.school-con {
   text-align: center;
-  h1{
-    padding: 15px;
-  }
   .news-section {
-    p{
+    p {
       color: white;
       background-color: black;
-      line-height: 1.6;
       padding: 10px;
     }
     @include flex-setup;
+    padding-bottom: 10px;
     .news1,
     .news2,
     .news3 {
@@ -45,24 +40,24 @@
       background: url("/images/news1.jpg");
       @include img-format;
     }
-    .news2{
+    .news2 {
       background: url("/images/news2.jpg");
       @include img-format;
     }
-    .news3{
+    .news3 {
       background: url("/images/news3.jpg");
       @include img-format;
     }
   }
 
   .events-section {
-    p{
+    p {
       color: white;
       background-color: black;
       padding: 10px;
     }
-    padding: 15px;
     @include flex-setup;
+    padding-bottom: 10px;
     .events1,
     .events2,
     .events3 {
@@ -72,13 +67,128 @@
       background: url("/images/event1.jpg");
       @include img-format;
     }
-    .events2{
+    .events2 {
       background: url("/images/event2.jpg");
       @include img-format;
     }
-    .events3{
+    .events3 {
       background: url("/images/event3.jpg");
       @include img-format;
     }
   }
 }
+
+@include mobile-device-lg(mobile-sm, mobile-md) {
+  .landing{
+    .intro{
+      text-align: center;
+    }
+  }
+  .school-con {
+    .news-section {
+      @include grid-setup;
+      .news1,
+      .news2,
+      .news3 {
+        @include box;
+        width: 250px;
+      }
+    }
+    .events-section{
+      @include grid-setup;
+      .events1,
+      .events2,
+      .events3 {
+        @include box;
+        width: 250px;
+      }
+    }
+  }
+}
+
+@include tablet-device(mobile-lg, tablet-sm){
+  .landing{
+    .intro{
+      text-align: center;
+    }
+  }
+  .school-con {
+    .news-section {
+      @include grid-setup2;
+      .news1,
+      .news2,
+      .news3 {
+        @include box;
+        width: 400px;
+      }
+    }
+    .events-section{
+      @include grid-setup2;
+      .events1,
+      .events2,
+      .events3 {
+        @include box;
+        width: 400px;
+      }
+    }
+  }
+}
+
+
+@include screen-md(tablet-sm, tablet-md){
+  .landing{
+    .intro{
+      text-align: center;
+    }
+  }
+  .school-con {
+    .news-section {
+      @include grid-setup2;
+      .news1,
+      .news2,
+      .news3 {
+        @include box;
+        width: 400px;
+      }
+    }
+    .events-section{
+      @include grid-setup2;
+      .events1,
+      .events2,
+      .events3 {
+        @include box;
+        width: 400px;
+      }
+    }
+  }
+}
+
+@include screen-lg(tablet-lg, screen-xl){
+  .landing{
+    .intro{
+      text-align: center;
+    }
+  }
+  .school-con {
+    .news-section {
+      @include grid-setup2;
+      .news1,
+      .news2,
+      .news3 {
+        @include box;
+        width: 500px;
+      }
+    }
+    .events-section{
+      @include grid-setup2;
+      .events1,
+      .events2,
+      .events3 {
+        @include box;
+        width: 500px;
+      }
+    }
+  }
+}
+
+

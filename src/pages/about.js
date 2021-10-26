@@ -26,9 +26,10 @@ function About() {
             </div>
           </section>
 
-          <article className="about-statement">
+          <section className="about-statement">
             <div className="mission">
               <h1>Mission</h1>
+              <div className="mission-para">
               <p>
                 The mission of Ridgeview is to advance knowledge and educate
                 students in science, technology, and other areas of scholarship
@@ -44,9 +45,10 @@ function About() {
                 wisely, creatively, and effectively for the betterment of
                 humankind.
               </p>
+              </div>
             </div>
             <div className="school-logo"></div>
-          </article>
+          </section>
         </article>
       </div>
     </div>

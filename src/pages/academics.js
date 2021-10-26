@@ -13,7 +13,7 @@ function Academics() {
             <div className="btn-con">
               <h2>Undergraduate Programs</h2>
               <NavLink to="/undergraduate" className="nav-links1">
-                <input type="submit" value="View Courses" />
+                <input type="submit" value="View Courses" className="btn-acads" />
               </NavLink>
             </div>
           </div>
@@ -23,7 +23,9 @@ function Academics() {
             <div className="btn-con">
               <h2>Graduate Programs</h2>
               <NavLink to="/graduate" className="nav-links1">
-                <input type="submit" value="View Courses" />
+                <button type="submit" value="View Courses" className="btn-acads" >
+                View Courses
+                </button>
               </NavLink>
             </div>
           </div>

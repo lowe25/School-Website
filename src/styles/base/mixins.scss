@@ -1,16 +1,40 @@
 @mixin flex-setup{
     display: flex;
     justify-content: center;
+    flex-direction: row;
     gap: 15px;
 }
 
+@mixin flex-setup2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 @mixin grid-setup {
     display: grid;
     justify-content: center;
 }
+@mixin grid-setup2 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1,auto);
+}
+
+@mixin grid-setup3 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,auto);
+}
+
+
+@mixin grid-setupMobile{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1,auto);
+}
 @mixin box{
     height: 300px;
-    width: 450px;
+    width: 500px;
 }
 
 @mixin img-format{
