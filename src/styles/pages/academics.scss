@@ -1,5 +1,5 @@
 .academics-container {
-  font-family: 'Quicksand', sans-serif;
+  font-family: $main-font;
   .academics-intro {
     height: 400px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -10,7 +10,7 @@
       position: relative;
       text-align: center;
       top: 40%;
-      color: white;
+      color: $txt-color;
     }
   }
   .programs {
@@ -20,10 +20,26 @@
     .undergrad,
     .graduate {
       @include box;
-      border: 2px solid black;
+      border: 2px solid $bg-color2;
+      color: $txt-color;
     }
+    .undergrad{
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/images/acads.jpg");
+      @include img-format;
+    }
+    .graduate{
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/images/gradschool.jpg");
+      @include img-format;
+      .btn-con{
+        padding: 20px;
+      }
+    }
+
     .btn-acads{
       cursor: pointer;
+      @include btn-default;
     }
     .jeje {
       height: 200px;

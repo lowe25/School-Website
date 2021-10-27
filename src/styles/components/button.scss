@@ -1,0 +1,14 @@
+@mixin btn-default {
+    height: 35px;
+    width: 200px;
+    border: none;
+    color: $txt-color;
+    background-color:$btn-color1;
+}
+
+@mixin btn-cta {
+    @include btn-default();
+    height: 40px;
+    width: 190px;
+    cursor: pointer;
+}

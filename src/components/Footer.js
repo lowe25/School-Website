@@ -1,19 +1,28 @@
-function Footer(){
-    return(
+function Footer() {
+  return (
     <div>
-        <footer className="footer">
-         <h3>Socials</h3>
-         <ul>
-             <li>Facebook</li>
-             <li>Instagram</li>
-             <li>Youtube</li>
-         </ul>
-          <div className="copy">
-          <p>Copyright 2021 Ridgeview All Rights Reserved</p>
-          </div>
-        </footer>
-    </div>
-    )
+      <footer className="footer">
+        <ul>
+          <li>
+            <i class="fab fa-facebook"></i>
+          </li>
+          <li>
+            <i class="fab fa-instagram"></i>
+          </li>
+          <li>
+            <i class="fab fa-youtube"></i>
+          </li>
+        </ul>
+        <div className="usercons">
+            <p>Terms of Use</p>
+            <p>Privacy Policy</p>
+        </div>
+        <div className="copy">
+          <p><i class="far fa-copyright"></i> 2021 Ridgeview</p>
+        </div>
+      </footer>
+      </div>
+  );
 }
 
 export default Footer;

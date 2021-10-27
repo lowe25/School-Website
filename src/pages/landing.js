@@ -6,7 +6,7 @@ function Landing() {
         <div className="intro">
           <h1>Welcome to Ridgeview</h1>
           <div className="btn-container">
-            <input type="button" value="Explore" className="btn-cta" />
+            <input type="button" value="Explore" className="btn-landing" />
           </div>
         </div>
       </div>

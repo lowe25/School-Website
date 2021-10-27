@@ -1,5 +1,5 @@
 .landing {
-  font-family: "Quicksand", sans-serif;
+  font-family: $main-font;
   height: 100vh;
   background-color: red;
   background: url("/images/burton.jpg");
@@ -8,14 +8,12 @@
     @include grid-setup;
     position: relative;
     top: 35%;
-    color: white;
+    color: $txt-color;
     .btn-container {
       @include grid-setup;
       padding: 15px;
-      .btn-cta {
-        height: 40px;
-        width: 190px;
-        cursor: pointer;
+      .btn-landing {
+        @include btn-cta;
       }
     }
   }
@@ -25,8 +23,8 @@
   text-align: center;
   .news-section {
     p {
-      color: white;
-      background-color: black;
+      color: $txt-color;
+      background-color: $bg-color2;
       padding: 10px;
     }
     @include flex-setup;
@@ -52,8 +50,8 @@
 
   .events-section {
     p {
-      color: white;
-      background-color: black;
+      color: $txt-color;
+      background-color: $bg-color2;
       padding: 10px;
     }
     @include flex-setup;
@@ -79,8 +77,8 @@
 }
 
 @include mobile-device-lg(mobile-sm, mobile-md) {
-  .landing{
-    .intro{
+  .landing {
+    .intro {
       text-align: center;
     }
   }
@@ -94,7 +92,7 @@
         width: 250px;
       }
     }
-    .events-section{
+    .events-section {
       @include grid-setup;
       .events1,
       .events2,
@@ -106,9 +104,9 @@
   }
 }
 
-@include tablet-device(mobile-lg, tablet-sm){
-  .landing{
-    .intro{
+@include tablet-device(mobile-lg, tablet-sm) {
+  .landing {
+    .intro {
       text-align: center;
     }
   }
@@ -122,7 +120,7 @@
         width: 400px;
       }
     }
-    .events-section{
+    .events-section {
       @include grid-setup2;
       .events1,
       .events2,
@@ -134,10 +132,9 @@
   }
 }
 
-
-@include screen-md(tablet-sm, tablet-md){
-  .landing{
-    .intro{
+@include screen-md(tablet-sm, tablet-md) {
+  .landing {
+    .intro {
       text-align: center;
     }
   }
@@ -151,7 +148,7 @@
         width: 400px;
       }
     }
-    .events-section{
+    .events-section {
       @include grid-setup2;
       .events1,
       .events2,
@@ -163,9 +160,9 @@
   }
 }
 
-@include screen-lg(tablet-lg, screen-xl){
-  .landing{
-    .intro{
+@include screen-lg(tablet-lg, screen-xl) {
+  .landing {
+    .intro {
       text-align: center;
     }
   }
@@ -179,7 +176,7 @@
         width: 500px;
       }
     }
-    .events-section{
+    .events-section {
       @include grid-setup2;
       .events1,
       .events2,
@@ -190,5 +187,3 @@
     }
   }
 }
-
-
