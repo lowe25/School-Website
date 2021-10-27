@@ -18,36 +18,22 @@
       }
     }
   }
-}
-.keme {
-  height: 40px;
-  background-color: red;
+  h1 {
+    padding-top: 15px;
+  }
 }
 
-.about-about {
-  @include flex-setup2;
-  gap: 20px;
-  .text1,
-  p {
-    text-align: center;
-    width: 400px;
-  }
-  .text2,
-  p {
-    text-align: center;
-    width: 400px;
-  }
-}
+
 .school-info {
   min-height: 800px;
   text-align: center;
   line-height: 1.6;
-
   .about-section {
     @include flex-setup;
     padding-top: 20px;
     .pic {
-      @include box;
+      height: 400px;
+      width: 400px;
       background: url("/images/about-univ.jpg");
       @include img-format;
     }
@@ -60,41 +46,79 @@
     @include flex-setup;
     .mission-para {
       width: 400px;
-      padding: 20px;
+      padding: 10px;
     }
     .school-logo {
-      @include box;
+      height: 400px;
+      width: 400px;
       background: url("/images/logo.jpg");
       @include img-format;
     }
   }
 }
 
-@include mobile-device(mobile-sm) {
+@include mobile-device(mobile-md) {
   .about-container {
-    .img-landing {
-      .about-intro {
-        left: 1%;
-      }
+    .about-intro {
+      left: 1%;
     }
   }
   .school-info {
     .about-section {
-      @include flex-setup2;
+      @include grid-setupMobile;
       .pic {
-        @include box;
-        width: 270px;
+        width: 300px;
       }
       .about-para {
         text-align: center;
-        width: 260px;
+        width: 250px;
       }
     }
     .about-statement {
-      @include flex-setup2;
+      @include grid-setupMobile;
+      .school-logo {
+        width: 300px;
+        margin-bottom: 10px;
+      }
       .mission-para {
         text-align: center;
-        width: 260px;
+        width: 250px;
+      }
+    }
+  }
+}
+@include mobile-device-lg(mobile-lg, tablet-sm) {
+  .about-container {
+    .about-intro {
+      left: 1%;
+    }
+  }
+  .school-info {
+    .about-section {
+      @include grid-setupMobile;
+    }
+    .about-statement {
+      @include grid-setupMobile;
+      .school-logo {
+        margin: 10px;
+      }
+    }
+  }
+}
+@include tablet-device(tablet-sm, tablet-md) {
+  .about-container {
+    .about-intro {
+      left: 1%;
+    }
+  }
+  .school-info {
+    .about-section {
+      @include grid-setupMobile;
+    }
+    .about-statement {
+      @include grid-setupMobile;
+      .school-logo {
+        margin: 10px;
       }
     }
   }

@@ -49,3 +49,17 @@
   }
 }
 }
+
+@include mobile-device-lg(mobile-sm, tablet-sm){
+  .academics-container{
+    .programs{
+      @include flex-setup2;
+      padding: 12px 0 10px 0;
+      .undergrad,
+      .graduate{
+        @include box;
+        width: 250px;
+      }
+    }
+  }
+}
